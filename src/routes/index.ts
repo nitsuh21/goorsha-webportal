@@ -11,6 +11,9 @@ const Alerts = lazy(() => import('../pages/UiElements/Alerts'));
 const Buttons = lazy(() => import('../pages/UiElements/Buttons'));
 const InfluencersDash = lazy(() => import('../pages/Dashboard/InfluencersDash'));
 const BizShowerDash = lazy(() => import('../pages/Dashboard/BizshowerDash'));
+const Myproducts = lazy(() => import('../pages/ECommerce/Myproducts'));
+const Myorders = lazy(() => import('../pages/ECommerce/Myorders'));
+
 const coreRoutes = [
   {
     path: '/calendar',
@@ -66,7 +69,17 @@ const coreRoutes = [
     path:'/BizshowerDash',
     title: 'BizshowerDash',
     component: BizShowerDash,
-  }
+  },
+  {
+    path:'/Myproducts',
+    title: 'Myproducts',
+    component: Myproducts,
+  },
+  {
+    path:'/Myorders',
+    title: 'Myorders',
+    component: Myorders,
+  },
 ];
 
 const routes = [...coreRoutes];
