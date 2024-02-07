@@ -9,7 +9,8 @@ const Settings = lazy(() => import('../pages/Settings'));
 const Tables = lazy(() => import('../pages/Tables'));
 const Alerts = lazy(() => import('../pages/UiElements/Alerts'));
 const Buttons = lazy(() => import('../pages/UiElements/Buttons'));
-
+const InfluencersDash = lazy(() => import('../pages/Dashboard/InfluencersDash'));
+const BizShowerDash = lazy(() => import('../pages/Dashboard/BizshowerDash'));
 const coreRoutes = [
   {
     path: '/calendar',
@@ -56,6 +57,16 @@ const coreRoutes = [
     title: 'Buttons',
     component: Buttons,
   },
+  {
+    path:'/InfluencersDash',
+    title: 'InfluencersDash',
+    component: InfluencersDash,
+  },
+  {
+    path:'/BizshowerDash',
+    title: 'BizshowerDash',
+    component: BizShowerDash,
+  }
 ];
 
 const routes = [...coreRoutes];

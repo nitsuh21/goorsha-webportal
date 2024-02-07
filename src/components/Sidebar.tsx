@@ -184,7 +184,29 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              eCommerce
+                              Affiliate Campaigns
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to="/InfluencersDash"
+                              className={({ isActive }) =>
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
+                                (isActive && '!text-white')
+                              }
+                            >
+                              Influencer Deals
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to="/Bizshower"
+                              className={({ isActive }) =>
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
+                                (isActive && '!text-white')
+                              }
+                            >
+                              Business Showers
                             </NavLink>
                           </li>
                         </ul>
